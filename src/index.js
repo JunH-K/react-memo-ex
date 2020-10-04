@@ -1,6 +1,6 @@
 import React, {memo, useCallback} from 'react'
 import ReactDOM from 'react-dom'
-//react memo
+//react memo - props 변경시에만 rerender
 const Button = memo(({increment, count}) => {
   console.log('Button')
   return <button onClick={increment}>The count is {count}</button>
